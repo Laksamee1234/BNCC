@@ -1,0 +1,39 @@
+login as: root
+root@131.107.88.180's password:
+Last login: Mon Jun 3 21:37:03 2019 from 131.107.88.53
+[root@dns ~]# pwd
+/root
+[root@dns ~]# cd /var/www/html/
+[root@dns html]# git init BNCC
+Initialized empty Git repository in /var/www/html/BNCC/.git/
+[root@dns html]# cd BNCC
+[root@dns BNCC]# git remote add origin https://github.com/mangcom/BNCC.git
+[root@dns BNCC]# ls
+[root@dns BNCC]# ls -l
+total 0
+[root@dns BNCC]# ls -la
+total 12
+drwxr-xr-x 3 root root 18 Jun 4 15:29 .
+drwxr-xr-x. 184 root root 8192 Jun 4 15:29 ..
+drwxr-xr-x 7 root root 119 Jun 4 15:31 .git
+[root@dns BNCC]# git pull -u origin master
+Username for 'https://github.com': mangcom@hotmail.com
+Password for 'https://mangcom@hotmail.com@github.com':
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/mangcom/BNCC
+* branch master -> FETCH_HEAD
+[root@dns BNCC]# ls
+index.html README.md
+[root@dns BNCC]# ls -la
+total 16
+drwxr-xr-x 3 root root 53 Jun 4 15:32 .
+drwxr-xr-x. 184 root root 8192 Jun 4 15:29 ..
+drwxr-xr-x 8 root root 162 Jun 4 15:32 .git
+-rw-r--r-- 1 root root 0 Jun 4 15:32 index.html
+-rw-r--r-- 1 root root 20 Jun 4 15:32 README.md
+[root@dns BNCC]#
+ซ่อนหรือรายงานความคิดเห็นนี้
